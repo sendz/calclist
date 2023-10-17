@@ -1,0 +1,6 @@
+data/com.sendyyeah.Calclist.desktop.in
+data/com.sendyyeah.Calclist.metainfo.xml.in
+data/com.sendyyeah.Calclist.gschema.xml
+src/main.js
+src/window.js
+src/window.ui

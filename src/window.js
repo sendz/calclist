@@ -78,7 +78,9 @@ export const CalclistWindow = GObject.registerClass({
           itemContainer.append(entryName);
           itemContainer.append(entryOperator);
           itemContainer.append(entryAmount);
-          this._list_item.insert(itemContainer, -1);
+          const newItem = new Gtk.Builder();
+          newItem.add_from_resource('/com/sendyyeah/Calclist/gtk/item.ui')
+          this._list_item.insert(newItem.get_object('item'), -1);
         })
     }
 });
